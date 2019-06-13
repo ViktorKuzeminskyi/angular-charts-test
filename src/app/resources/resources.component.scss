@@ -1,0 +1,30 @@
+.disks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #99B1D2;
+  font-family: Arial, Helvetica, sans-serif;
+
+  h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #99B1D2;
+    margin: 0 0 20px;
+  }
+
+  .disk {
+    flex: 1 auto;
+    width: 30%;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #F4F5F9;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+  }
+}

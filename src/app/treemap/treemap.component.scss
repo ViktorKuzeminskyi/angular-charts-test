@@ -1,0 +1,24 @@
+.protected {
+  display: none;
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #9bc225;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+}
+.unprotected {
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #d92c33;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+}
+

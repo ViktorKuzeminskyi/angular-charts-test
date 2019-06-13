@@ -1,0 +1,14 @@
+<p>{{title}}</p>
+<div class="disks">
+  <section *ngFor="let disk of disks; dIndex as i;" class="disk">
+    <h2>{{disk.name}}:</h2>
+    <div *ngFor="let folder of disk.folders; fIndex as i;">
+      <h3>\{{folder.name}}</h3>
+        <app-barchart
+          [disk]="disk.name"
+          [parentName]="folder.name"
+          [folderData]="folder.folders"
+        ></app-barchart>
+    </div>
+  </section>
+</div>
